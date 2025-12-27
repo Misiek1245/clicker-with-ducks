@@ -1,0 +1,10 @@
+$background: rgb(26, 26, 26);
+
+*{
+    color: whitesmoke;
+    text-align: center;
+}
+
+body, button{
+    background-color: $background;
+}
