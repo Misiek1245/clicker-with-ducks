@@ -8,3 +8,19 @@ $background: rgb(26, 26, 26);
 body, button{
     background-color: $background;
 }
+body {
+    -webkit-app-region: drag; /* całe okno przeciągalne */
+}
+img {
+    -webkit-app-region: no-drag; /* obrazek nie blokuje przeciągania */
+}
+@media screen and (max-width: 512px)  {
+    img{
+        width: 95vw;
+    }
+}
+button{
+    img{
+        width: 10vw;
+    }
+}

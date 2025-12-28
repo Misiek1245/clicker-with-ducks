@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   color: whitesmoke;
   text-align: center;
@@ -5,6 +6,23 @@
 
 body, button {
   background-color: rgb(26, 26, 26);
+}
+
+body {
+  -webkit-app-region: drag; /* całe okno przeciągalne */
+}
+
+img {
+  -webkit-app-region: no-drag; /* obrazek nie blokuje przeciągania */
+}
+
+@media screen and (max-width: 512px) {
+  img {
+    width: 95vw;
+  }
+}
+button img {
+  width: 10vw;
 }
 
 /*# sourceMappingURL=style.css.map */
