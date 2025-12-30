@@ -1,16 +1,19 @@
 {
-  "name": "something-about-ducks",
-  "version": "1.0.0",
+  "name": "clicker-with-ducks",
+  "version": "0.9.9",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "build": "electron-packager . clicker-with-ducks --platform=win32 --arch=x64  --out=dist --overwrite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
-    "electron": "^39.2.7"
+    "@electron/packager": "^19.0.1",
+    "electron": "^39.2.7",
+    "electron-packager": "^17.1.2"
   }
 }
