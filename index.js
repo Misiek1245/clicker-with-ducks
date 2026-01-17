@@ -1,10 +1,12 @@
 const {app, BrowserWindow } = require('electron');
+const path = require("path");
 
 function create_window(){
     const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+        width: 1000,
+        height: 1000,
         frame: false,
+        icon:path.join(__dirname, "img", "logo.ico"),
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false
@@ -15,5 +17,5 @@ function create_window(){
 }
 app.whenReady().then(create_window)
 app.on('window-all-closed',() => {
-    if (process.platform !== 'darwin')app.quit
+    if (process.platform !== 'darwin')app.quit()
 })
